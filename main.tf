@@ -3,4 +3,5 @@ module "application" {
   version = "0.0.2"
   ami_name = "packer-linux-aws-python-app"
   region = var.region
+  vpc_id = var.vpc_id
 }
