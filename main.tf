@@ -11,7 +11,7 @@ resource "aws_default_vpc" "default" {
 
 module "application" {
   source  = "app.terraform.io/company-foobar/application/aws"
-  version = "~> 0.0.2"
+  version = "~> 0.1.0"
   ami_name = "packer-linux-aws-python-app"
   region = var.region
   vpc_id = aws_default_vpc.default.id
