@@ -4,7 +4,6 @@ provider "aws" {
 }
 
 resource "aws_default_vpc" "default" {
-  region = var.region
   tags = {
     Name = "Default VPC"
   }
