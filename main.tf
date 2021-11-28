@@ -20,5 +20,5 @@ module "application" {
 module "database" {
   source  = "app.terraform.io/company-foobar/database/aws"
   version = "~> 0.0.1"
-  role = module.application.compute_role
+  role = module.application.compute_role_name
 }
