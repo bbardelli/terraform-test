@@ -16,3 +16,9 @@ module "application" {
   region = var.region
   vpc_id = aws_default_vpc.default.id
 }
+
+module "database" {
+  source  = "app.terraform.io/company-foobar/database/aws"
+  version = "~> 0.0.1"
+  role = module.application.role
+}
