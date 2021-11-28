@@ -1,3 +1,3 @@
 output "endpoint"{
-    value = module.application.instance_ip_addr
+    value = module.application.endpoint
 }
