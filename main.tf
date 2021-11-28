@@ -15,6 +15,7 @@ module "application" {
   ami_name = "packer-linux-aws-python-app"
   region = var.region
   vpc_id = aws_default_vpc.default.id
+  db_endpoint = module.database.endpoint
 }
 
 module "database" {
